@@ -1,1 +1,1 @@
-"# LPS" 
+"# Loyalty Point System" 
