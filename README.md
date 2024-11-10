@@ -17,12 +17,14 @@ Point Redemption: Customers can redeem points for various gift cards available o
 Admin Dashboard: For monitoring and managing vendor requests, customer accounts, and point allocations.
 
 ### Tech Stack
+
 Backend: Django, Django REST Framework for API endpoints
 Database: SQLite (or your chosen database)
 Frontend: HTML, CSS, JavaScript (optional: React or other JS frameworks)
 Authentication: Django's built-in authentication for user (vendor and customer) login
 
 #### Installation and Setup
+
 Clone the Repository:
 
 ```bash
@@ -35,11 +37,13 @@ Install Requirements:
 ```bash
 pip install -r requirements.txt
 ```
+
 Database Setup: Update the database settings in settings.py, then run migrations:
 
 ```bash
 python manage.py migrate
 ```
+
 Run Server:
 
 ```bash
@@ -52,7 +56,7 @@ To run this project, you will need to add the following environment variables to
 
 `LOYPT_SECRET_KEY`
 
-
 ### Usage
+
 Vendor: Register an account and submit order details to request points for customers.
 Customer: Login to view loyalty points and redeem them for rewards.
