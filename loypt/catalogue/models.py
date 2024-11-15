@@ -5,7 +5,8 @@ from django.db.models import (
     BooleanField,
     FloatField,
     DateField,
-    OneToOneField,
+    DateTimeField,
+    ForeignKey,
     CASCADE,
 )
 
@@ -31,8 +32,8 @@ class Catalogue(Model):
     campaignName = CharField(max_length=20, default="New Campaign")
     campaignStartDate = DateField()
     campaignEndDate = DateField()
-    vendor = OneToOneField(Vendor, on_delete=CASCADE)
-    creationDate = DateField(auto_now_add=True)
+    vendor = ForeignKey(Vendor, on_delete=CASCADE)
+    creationDate = DateTimeField(auto_now_add=True)
     pointEffectiveDate = DateField()
     pointExpiryDate = DateField()
     IsCampaignCumulative = BooleanField(default=False)
