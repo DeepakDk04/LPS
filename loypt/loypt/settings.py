@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "vendor.apps.VendorConfig",
     "consumer.apps.ConsumerConfig",
     "catalogue.apps.CatalogueConfig",
+    "purchaseregistry.apps.PurchaseregistryConfig",
 ]
 
 MIDDLEWARE = [
