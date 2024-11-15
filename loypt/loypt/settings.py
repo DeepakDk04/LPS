@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     # custom modules
     "vendor.apps.VendorConfig",
     "consumer.apps.ConsumerConfig",
+    "catalogue.apps.CatalogueConfig",
 ]
 
 MIDDLEWARE = [
