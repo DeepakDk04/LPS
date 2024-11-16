@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "consumer.apps.ConsumerConfig",
     "catalogue.apps.CatalogueConfig",
     "purchaseregistry.apps.PurchaseregistryConfig",
+    "walletpoint.apps.WalletpointConfig",
 ]
 
 MIDDLEWARE = [
