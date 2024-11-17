@@ -3,6 +3,7 @@ from django.db.models import (
     DateTimeField,
     FloatField,
     ForeignKey,
+    OneToOneField,
     CASCADE,
     SET_NULL,
 )
@@ -20,7 +21,7 @@ class WalletPoint(Model):
     preBal = FloatField(default=0.0)
     newBal = FloatField(default=0.0)
     points = FloatField(default=0.0)
-    purchase = ForeignKey(PurchaseRegistry, on_delete=CASCADE)
+    purchase = OneToOneField(PurchaseRegistry, on_delete=CASCADE)
     expiry = DateTimeField()
     timeStamp = DateTimeField(auto_now_add=True)
     vendor = ForeignKey(Vendor, on_delete=SET_NULL, blank=True, null=True)
