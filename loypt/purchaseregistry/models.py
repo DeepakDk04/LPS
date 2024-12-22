@@ -21,7 +21,9 @@ class PurchaseRegistry(Model):
     purchaseRef = CharField(max_length=50)
     amount = FloatField()
     timeStamp = DateTimeField(auto_now_add=True)
-    vendor = ForeignKey(Vendor, on_delete=SET_NULL, blank=True, null=True)
+    vendor = ForeignKey(
+        Vendor, on_delete=SET_NULL, blank=True, null=True
+    )  # TODO: create dummy vendor account, assign that dummy vendor as default when an actual vendor ac got deleted.
     orderCatlouge = ForeignKey(Catalogue, on_delete=SET_NULL, blank=True, null=True)
     consumer = ForeignKey(Consumer, on_delete=CASCADE)
 
