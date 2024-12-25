@@ -21,9 +21,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 envConfig = dotenv_values(".env")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = envConfig.get("LOYPT_SECRET_KEY", "")
+ENVIRONMENT_NAME = envConfig.get("EXCEUTION_ENVIRONMENT", "")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if ENVIRONMENT_NAME == "PRODUCTION":
+    DEBUG = False
+else:
+    DEBUG = True
 
 ALLOWED_HOSTS = []
 
