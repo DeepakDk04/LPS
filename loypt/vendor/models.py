@@ -10,8 +10,8 @@ class Vendor(models.Model):
     pincode = models.CharField(max_length=6)
     state = models.CharField(max_length=20)
     contactNo = models.CharField(max_length=13)
-    sharedKey = models.CharField(max_length=30)
-    apiKey = models.CharField(max_length=30)
+    sharedKey = models.CharField(max_length=30, unique=True)
+    apiKey = models.CharField(max_length=30, unique=True)
     lastUpdatedOn = models.DateTimeField(auto_now=True)
 
     def save(self, **kwargs):
