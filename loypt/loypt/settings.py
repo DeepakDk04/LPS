@@ -38,11 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # custom modules
-    "vendor.apps.VendorConfig",
-    "consumer.apps.ConsumerConfig",
-    "catalogue.apps.CatalogueConfig",
-    "purchaseregistry.apps.PurchaseregistryConfig",
-    "walletpoint.apps.WalletpointConfig",
 ]
 
 MIDDLEWARE = [
