@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "vendor",
     "customer",
     "rule",
+    "campaign",
 ]
 
 MIDDLEWARE = [
