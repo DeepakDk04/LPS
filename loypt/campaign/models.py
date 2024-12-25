@@ -15,7 +15,7 @@ class Campaign(models.Model):
     name = models.CharField(max_length=20)
     description = models.CharField(max_length=50)
     activeRules = models.ManyToManyField(Rule, related_name="rulelist")
-    rulesHistory = models.ManyToManyField(Rule, related_name="pastrule")
+    rulesHistory = models.ManyToManyField(Rule, related_name="pastrule", blank=True)
     createdBy = models.ForeignKey(Vendor, on_delete=models.CASCADE)
     createdOn = models.DateTimeField(auto_now_add=True)
     startDate = models.DateField()
