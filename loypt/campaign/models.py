@@ -18,6 +18,7 @@ class Campaign(models.Model):
     rulesHistory = models.ManyToManyField(Rule, related_name="pastrule", blank=True)
     createdBy = models.ForeignKey(Vendor, on_delete=models.CASCADE)
     createdOn = models.DateTimeField(auto_now_add=True)
+    lastUpdatedOn = models.DateTimeField(auto_now=True)
     startDate = models.DateField()
     endDate = models.DateField()
     status = models.CharField(max_length=10, choices=campaignStatus, default="notready")
