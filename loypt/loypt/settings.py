@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     "campaign",
     "purchase",
     "pointtransaction",
+    "coupon",
 ]
 
 MIDDLEWARE = [
