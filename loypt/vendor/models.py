@@ -12,6 +12,7 @@ class Vendor(models.Model):
     contactNo = models.CharField(max_length=13)
     sharedKey = models.CharField(max_length=30)
     apiKey = models.CharField(max_length=30)
+    lastUpdatedOn = models.DateTimeField(auto_now=True)
 
     def __str__(self):
         return f"{self.user.get_username()} from {self.name}"
