@@ -5,7 +5,7 @@ from vendor.models import Vendor
 class Rule(models.Model):
 
     name = models.CharField(max_length=20)
-    Description = models.CharField(max_length=40)
+    description = models.CharField(max_length=40)
     isDerivePurchaseVal = models.BooleanField(default=False)
     purchasePercentage = models.PositiveSmallIntegerField(default=0)
     isPointLimit = models.BooleanField(default=False)
