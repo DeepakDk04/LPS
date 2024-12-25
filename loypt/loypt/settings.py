@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # custom apps
     "vendor",
     "customer",
+    "rule",
 ]
 
 MIDDLEWARE = [
