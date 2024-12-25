@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "rule",
     "campaign",
     "purchase",
+    "pointtransaction",
 ]
 
 MIDDLEWARE = [
