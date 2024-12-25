@@ -11,6 +11,7 @@ class Purchase(models.Model):
     """
 
     # todo: to fix on delete default when the reference object deleted
+    orderReference = models.CharField(max_length=30)
     campaign = models.ForeignKey(Campaign, on_delete=models.CASCADE)
     rule = models.ForeignKey(Rule, on_delete=models.CASCADE)
     amount = models.FloatField()
